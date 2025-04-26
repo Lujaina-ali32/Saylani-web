@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color:  rgb(0, 0, 0);
+}
+.navbar {
+    background: #f1ecec;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 150px;
+  }
+  
+  .logo img {
+    margin-left: 20px;
+    width: 250px;
+    height: 200px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 50px;
+  }
+  
+  .nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav-links a:hover {
+    color: #003ec5;
+    font-weight: bold;
+    border-bottom: 2px solid #003ec5;
+  }
+  .menu-icon {
+    display: none;
+    font-size: 45px;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  #menu-toggle {
+    display: none;
+    color: white
+  }
+  .container{
+    display: flex;
+    
+  }
+  .heading{
+    justify-content: left;
+    align-items: center;
+    padding: 100px 50px;
+    flex-wrap: wrap;
+
+  }
+  .hero img{
+    width:1000px ;
+    height: 8=600px;
+    padding: 10px 20px;
+    border-radius: 100px;
+  }
+  h1{
+    font-weight: 2000px;
+    font-size: 2.2em;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .explore{
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 8px;
+     border: 2px solid #003ec5;
+     background-color: white;
+     color: #003ec5;
+     font-size: 17px;
+     font-weight: bold;
+  }
+  .explore:hover{
+    cursor: pointer;
+    width: 250px;
+    height: 60px;
+    font-size: 19px;
+    background-color: #003ec5;
+    color: white;
+  }
+  p{
+    font-size: 19px;
+    padding: 20px 0px;
+  }
+  .about{
+    width: 1500px;
+    height: 500px;
+    background-image: url(./side.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    opacity: 0.7;
+    margin: auto;
+    box-shadow: 0 0 6px black;
+  }
+  .content{
+    padding:4px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 150px;
+    color: white;
+    
+  }
+  .content p{
+    font-size: 20px;
+    font-weight:550;
+  }
+  .content h1{
+    font-size: 50px;
+  }
+  .info {
+     margin-top: 50px;
+     margin-left: 30px;
+     margin-right: 30px;
+     
+  }
+  .info h2{
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 10px grey;
+  }
+  .info p{
+    font-size: 20px;
+    line-height: 2em;
+  }
+  .services{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 100px 50px;
+
+  }
+  .box h1{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+  }
+  .box img{
+    margin: 0px 2px;
+  }
+  .box img.water{
+    width: 230px;
+  }
+  .box img.education{
+    width: 230px;
+  }
+  .box img:hover{
+    width: 250px;
+    box-shadow: 0 0 1px black;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 500px;
+    margin-bottom: 60px;
+}
+.contact-form input , .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: 5px;
+    resize: vertical;
+}
+.contact-form button {
+  background: #0077cc;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.contact-form button:hover{
+  background: #185785;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 150px;
+      left: 0;
+      background:  #f1ecec;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin-bottom: 20px;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+    .logo img{
+        width: 250px;
+        height: 150px;
+    }
+    .container{
+      flex-direction: column;
+      text-align: center;
+    }
+    .services{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contact-form{
+      margin: 20px;
+    }
+    .hero img, .about{
+      width: 90%;
+      height: auto;
+    }
+}
